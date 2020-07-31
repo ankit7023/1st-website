@@ -1,0 +1,157 @@
+body {
+  color: #40514e;
+  margin: 0;
+  text-align: center;
+}
+
+
+.get{
+  margin-bottom: 40px;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  color: #eaf6f6;
+}
+
+.top {
+  background-color: #e4f9ff;
+  position: relative;
+  padding-top: 100px;
+  line-height: 1.5;
+}
+.middle-container{
+  margin-top: 90px;
+}
+.profile{
+  margin-bottom: 50px;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: 'Sacramento', cursive;
+  color: #12cad6;
+  font-size: 60px;
+}
+
+.p1 {
+  font-family: 'Raleway', sans-serif;
+  color: #12cad6;
+  font-weight: normal;
+}
+
+.top-cloud {
+  position: absolute;
+  top: 50px;
+  left: 350px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  right: 350px;
+}
+
+.pro {
+  text-decoration: underline;
+  color: #0fabbc;
+}
+
+.img1 {
+  width: 100px;
+  height: 100px;
+}
+
+h3 {
+  color: #11999E;
+}
+
+h2 {
+  color: #66bfbf;
+}
+
+.computer {
+  width: 200px;
+  height: 200px;
+  float: left;
+  margin-right: 40px;
+}
+
+.chillies {
+  width: 200px;
+  height: 200px;
+  float: right;
+  margin-left: 30px;
+
+}
+
+.footer-link {
+  color: #11999e;
+  margin-left: 15px;
+  margin-right: 15px;
+
+}
+
+.btn {
+  color: #11999E;
+}
+.skill-row{
+  width: 50%;
+  margin: 100px auto 170px auto;
+  line-height:1.67;
+  text-align: left;
+
+}
+
+hr{
+ border-style: none;
+  border-top-style:dotted;
+  border-color:#eaf6f6;
+  border-width:5px;
+  width: 7%;
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+
+
+}
+.bottom-container{
+  background-color: #66bfbf;
+  padding: 20px;
+  margin-top: 60px;
+
+
+
+}
+.footer{
+  color: #eaf6f6;
+}
+
+.btn {
+  margin-bottom: 30px;
+	box-shadow: 3px 4px 2px #265259;
+	background:linear-gradient(to bottom, #4ccccc 5%, #4ccccc 100%);
+	background-color:#eaf6f6;
+	border-radius:31px;
+	border:1px solid #29668f;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Impact;
+	font-size:17px;
+	padding:7px 15px;
+	text-decoration:none;
+	text-shadow:1px 1px 25px #3d768a;
+}
+.btn:hover {
+	background:linear-gradient(to bottom, #eaf6f6 5%, #599bb3 100%);
+	background-color:#eaf6f6;
+}
+.btn:active {
+	position:relative;
+	top:1px;
+}
