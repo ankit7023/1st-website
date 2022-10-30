@@ -1,0 +1,57 @@
+Q32. Longest Valid Parentheses (Leetcode)
+Given a string containing just the characters '(' and ')', return the length of the longest valid (well-formed) parentheses substring.
+
+
+class Solution {
+public:
+    int longestValidParentheses(string str) {
+        
+        int n = str.size();
+        
+        int maxi = 0;
+        
+        // dp[i] will store the maximum length of balanced parenthesis ending at i
+        
+        vector<int> dp(n, 0);
+        
+        // st will store the index of '('
+        
+        stack<int> st;
+        
+        for(int i = 0; i < n; i++)
+        {
+            if(str[i] == '(')
+            {
+                st.push(i);
+            }
+            else if(str[i] == ')')
+            {
+                if(st.empty())
+                {
+                    dp[i] = 0;
+                }
+                else
+                {
+                    int idx = st.top();
+                    
+                    st.pop();
+                    
+                    if(idx > 0)
+                    {
+                        dp[i] = dp[idx - 1] + dp[i - 1] + 2;
+                    }
+                    else
+                    {
+                        dp[i] = dp[i - 1] + 2;
+                    }
+                }
+            }
+            
+            // update maxi
+            
+            maxi = max(maxi, dp[i]);
+        }
+        
+        return maxi;
+    }
+};
